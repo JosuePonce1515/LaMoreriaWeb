@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    background-color: #f9f5e6;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h3, h4, h5, h6, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #7f0905;
+}
+
+.logo-header {
+    height: 60px;
+    width: auto;
+}
+
+.navbar-toggler {
+    border-color: #faa320;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23faa320' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .nav-link {
+    color: #faa320;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero-background {
+    width: 100%;
+    height: 65vh;
+    background-image: url('Imagenes/caballoContacto.jpg'); /* Usa una imagen específica si deseas */
+    background-size: cover;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-background::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    max-width: 80%;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-cta {
+    background-color: #faa320;
+    color: #7f0905;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #ffc34d;
+    color: #7f0905;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.contact-form h2 {
+    color: #7f0905;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #7f0905;
+}
+
+.contact-form .form-control {
+    border-radius: 30px;
+    border: 2px solid #7f0905;
+    padding: 0.5rem 1rem;
+}
+
+.contact-form .form-control:focus {
+    border-color: #faa320;
+    box-shadow: 0 0 0 0.2rem rgba(250,163,32,0.25);
+}
+
+/* Map container */
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer-section {
+    background-color: #7f0905;
+    color: #fff;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+}
+
+.footer-section i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-social i {
+    font-size: 1.8rem;
+}
+
+.footer-social a:hover i {
+    color: #faa320;
+}

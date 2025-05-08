@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - La Morería</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 + Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="estiloContacto.css">
+</head>
+<body class="bg-custom">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="hompage.html">
+                <img src="Imagenes/Logos/Logo Vertical2.png" alt="Logo La Moreria" class="logo-header me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="hompage.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="actividades.html">Actividades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Hospedaje.html">Hospedaje</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero-background">
+        <div class="hero-content text-center">
+            <h1 class="hero-title">Contáctanos</h1>
+            <p class="hero-subtitle">Estamos aquí para ayudarte a planear tu visita a La Morería</p>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Formulario de contacto -->
+            <div class="col-lg-6 mb-4 d-flex">
+                <div class="contact-form p-4 shadow flex-fill d-flex flex-column justify-content-between">
+                    <h2 class="text-center mb-4">Formulario de Contacto</h2>
+                    <form class="flex-grow-1 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="form-group mb-3">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" class="form-control" placeholder="Ingrese su nombre completo">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" class="form-control" placeholder="Ingrese su correo electrónico">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="motivo">Motivo de contacto:</label>
+                                <textarea id="motivo" class="form-control" placeholder="Escriba aquí su consulta o motivo de contacto"></textarea>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-cta">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Mapa -->
+            <div class="col-lg-6 mb-4 d-flex">
+                <div class="map-container flex-fill shadow rounded overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7249554042737!2d-78.51819862503531!3d-0.39197089960417913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a493cf595d1b%3A0x495a9638828d0e25!2sHacienda%20Tur%C3%ADstica%20La%20Morer%C3%ADa!5e0!3m2!1ses!2sec!4v1746676113058!5m2!1ses!2sec"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section text-center py-4">
+        <div class="container">
+            <img src="Imagenes/Logos/Logo Horizontal.png" alt="Logo La Moreria" class="footer-logo mb-3">
+            <p>La Moreria · Hostería y Restaurante</p>
+            <p>
+                <i class="bi bi-geo-alt-fill"></i> Dirección: Camino al Bosque Protector Pasochoa, Calle Pasochoa s/n, Amaguaña 170809. Quito, Ecuador. <br>
+                <i class="bi bi-telephone-fill"></i> Teléfono: +593 99 473 6095<br>
+                <i class="bi bi-envelope-fill"></i> Correo: poncedeleon.ec@gmail.com
+            </p>
+            <div class="footer-links mb-3">
+                <a href="hompage.html">Inicio</a> |
+                <a href="actividades.html">Actividades</a> |
+                <a href="Hospedaje.html">Hospedaje</a> |
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-social mb-3">
+                <a href="https://www.facebook.com/lamoreria.ec" target="_blank" class="mx-2"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/explore/locations/438024169/la-moreria-hacienda-decameron/" target="_blank" class="mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/@tupagina" target="_blank" class="mx-2"><i class="bi bi-tiktok"></i></a>
+            </div>
+            <p class="small">&copy; 2025 La Moreria. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
